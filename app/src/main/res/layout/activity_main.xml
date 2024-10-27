@@ -107,5 +107,174 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!--Esto por si queremos poner el estilo de los botones a mano despues-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton0"
+        android:text="@string/boton0"
+        app:layout_constraintStart_toEndOf="@+id/gv1"
+        app:layout_constraintBottom_toTopOf="@+id/gh1"
+        app:layout_constraintTop_toBottomOf="@+id/gh2"
+        app:layout_constraintEnd_toStartOf="@+id/gv3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonComa"
+        android:text="@string/botonComa"
+        app:layout_constraintStart_toEndOf="@+id/gv3"
+        app:layout_constraintBottom_toTopOf="@+id/gh1"
+        app:layout_constraintTop_toBottomOf="@+id/gh2"
+        app:layout_constraintEnd_toStartOf="@+id/gv4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonIgual"
+        android:text="@string/botonIgual"
+        app:layout_constraintStart_toEndOf="@+id/gv4"
+        app:layout_constraintEnd_toStartOf="@+id/gv5"
+        app:layout_constraintBottom_toTopOf="@+id/gh1"
+        app:layout_constraintTop_toBottomOf="@+id/gh2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton1"
+        android:text="@string/boton1"
+        app:layout_constraintStart_toEndOf="@+id/gv1"
+        app:layout_constraintEnd_toStartOf="@+id/gv2"
+        app:layout_constraintBottom_toTopOf="@+id/gh2"
+        app:layout_constraintTop_toBottomOf="@+id/gh3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton2"
+        android:text="@string/boton2"
+        app:layout_constraintStart_toEndOf="@+id/gv2"
+        app:layout_constraintEnd_toStartOf="@+id/gv3"
+        app:layout_constraintBottom_toTopOf="@+id/gh2"
+        app:layout_constraintTop_toBottomOf="@+id/gh3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton3"
+        android:text="@string/boton3"
+        app:layout_constraintStart_toEndOf="@+id/gv3"
+        app:layout_constraintEnd_toStartOf="@+id/gv4"
+        app:layout_constraintBottom_toTopOf="@+id/gh2"
+        app:layout_constraintTop_toBottomOf="@+id/gh3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonMas"
+        android:text="@string/botonMas"
+        app:layout_constraintStart_toEndOf="@+id/gv4"
+        app:layout_constraintEnd_toStartOf="@+id/gv5"
+        app:layout_constraintBottom_toTopOf="@+id/gh2"
+        app:layout_constraintTop_toBottomOf="@+id/gh3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton4"
+        android:text="@string/boton4"
+        app:layout_constraintStart_toEndOf="@+id/gv1"
+        app:layout_constraintEnd_toStartOf="@+id/gv2"
+        app:layout_constraintBottom_toTopOf="@+id/gh3"
+        app:layout_constraintTop_toBottomOf="@+id/gh4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton5"
+        android:text="@string/boton5"
+        app:layout_constraintStart_toEndOf="@+id/gv2"
+        app:layout_constraintEnd_toStartOf="@+id/gv3"
+        app:layout_constraintBottom_toTopOf="@+id/gh3"
+        app:layout_constraintTop_toBottomOf="@+id/gh4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton6"
+        android:text="@string/boton6"
+        app:layout_constraintStart_toEndOf="@+id/gv3"
+        app:layout_constraintEnd_toStartOf="@+id/gv4"
+        app:layout_constraintBottom_toTopOf="@+id/gh3"
+        app:layout_constraintTop_toBottomOf="@+id/gh4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonMinus"
+        android:text="@string/botonMenos"
+        app:layout_constraintStart_toEndOf="@+id/gv4"
+        app:layout_constraintEnd_toStartOf="@+id/gv5"
+        app:layout_constraintBottom_toTopOf="@+id/gh3"
+        app:layout_constraintTop_toBottomOf="@+id/gh4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton7"
+        android:text="@string/boton7"
+        app:layout_constraintStart_toEndOf="@+id/gv1"
+        app:layout_constraintEnd_toStartOf="@+id/gv2"
+        app:layout_constraintBottom_toTopOf="@+id/gh4"
+        app:layout_constraintTop_toBottomOf="@+id/gh5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton8"
+        android:text="@string/boton8"
+        app:layout_constraintStart_toEndOf="@+id/gv2"
+        app:layout_constraintEnd_toStartOf="@+id/gv3"
+        app:layout_constraintBottom_toTopOf="@+id/gh4"
+        app:layout_constraintTop_toBottomOf="@+id/gh5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton9"
+        android:text="@string/boton9"
+        app:layout_constraintStart_toEndOf="@+id/gv3"
+        app:layout_constraintEnd_toStartOf="@+id/gv4"
+        app:layout_constraintBottom_toTopOf="@+id/gh4"
+        app:layout_constraintTop_toBottomOf="@+id/gh5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonMulti"
+        android:text="@string/botonMulti"
+        app:layout_constraintStart_toEndOf="@+id/gv4"
+        app:layout_constraintEnd_toStartOf="@+id/gv5"
+        app:layout_constraintBottom_toTopOf="@+id/gh4"
+        app:layout_constraintTop_toBottomOf="@+id/gh5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonClear"
+        android:text="@string/botonClear"
+        app:layout_constraintStart_toEndOf="@+id/gv1"
+        app:layout_constraintEnd_toStartOf="@+id/gv4"
+        app:layout_constraintBottom_toTopOf="@+id/gh5"
+        app:layout_constraintTop_toBottomOf="@+id/gh6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonDivision"
+        android:text="@string/botonDiv"
+        app:layout_constraintStart_toEndOf="@+id/gv4"
+        app:layout_constraintEnd_toStartOf="@+id/gv5"
+        app:layout_constraintBottom_toTopOf="@+id/gh5"
+        app:layout_constraintTop_toBottomOf="@+id/gh6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
