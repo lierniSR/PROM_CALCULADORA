@@ -52,13 +52,13 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             binding.boton7 -> onNumberPressed("7")
             binding.boton8 -> onNumberPressed("8")
             binding.boton9 -> onNumberPressed("9")
-            binding.botonMulti -> ""
-            binding.botonDivision -> ""
-            binding.botonMas -> ""
-            binding.botonMinus -> ""
+            binding.botonMulti -> onOperacionPressed("*")
+            binding.botonDivision -> onOperacionPressed("/")
+            binding.botonMas -> onOperacionPressed("+")
+            binding.botonMinus -> onOperacionPressed("-")
             binding.botonComa -> onNumberPressed(",")
             binding.botonClear -> ""
-            binding.botonIgual -> ""
+            binding.botonIgual -> onEqualsPressed()
         }
     }
 
@@ -82,5 +82,33 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             numero1 = binding.pantalla.text.toString().toDouble()
         else
             numero2 = binding.pantalla.text.toString().toDouble()
+    }
+
+    private fun onOperacionPressed(operacion: String){
+        this.operacion = operacion
+        numero1 = binding.pantalla.toString().toDouble()
+
+        binding.pantalla.text = "0"
+    }
+
+    private fun onEqualsPressed(){
+        val resultado = when(this.operacion){
+            "+" -> numero1 + numero2
+            "-" -> numero1 - numero2
+            "*" -> numero1 * numero2
+            "/" -> if(numero2 == 0.0)
+                        "Error"
+                    else
+                        numero1 / numero2
+            else -> 0
+        }
+
+        operacion = null
+        numero1 = resultado.toDouble()
+
+        binding.pantalla.text = if(resultado.toString().endsWith("0"))
+                resultado.toString().replace("0", "")
+            else
+                "%.2f".format(resultado)
     }
 }
