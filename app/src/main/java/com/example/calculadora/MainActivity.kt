@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             binding.botonMas -> onOperacionPressed("+")
             binding.botonMinus -> onOperacionPressed("-")
             binding.botonComa -> onNumberPressed(",")
-            binding.botonClear -> ""
+            binding.botonClear -> onClearPressed()
             binding.botonIgual -> onEqualsPressed()
         }
     }
@@ -96,19 +96,28 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             "+" -> numero1 + numero2
             "-" -> numero1 - numero2
             "*" -> numero1 * numero2
-            "/" -> if(numero2 == 0.0)
-                        "Error"
-                    else
-                        numero1 / numero2
+            "/" -> numero1 / numero2
             else -> 0
         }
 
         operacion = null
         numero1 = resultado.toDouble()
 
-        binding.pantalla.text = if(resultado.toString().endsWith("0"))
-                resultado.toString().replace("0", "")
-            else
-                "%.2f".format(resultado)
+        //Cuando se trata dee formateos mejor hacerlo con el try catch
+        try{
+            binding.pantalla.text =
+                if(resultado.toString().endsWith("0"))
+                    resultado.toString().replace("0", "")
+                else
+                    "%.2f".format(resultado)
+        } catch(e: Exception){
+            e.printStackTrace()
+        }
+    }
+
+    private fun onClearPressed() {
+        binding.pantalla.text = "0"
+        numero1 = 0.0
+        numero2 = 0.0
     }
 }
